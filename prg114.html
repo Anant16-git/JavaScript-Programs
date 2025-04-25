@@ -1,0 +1,31 @@
+<!-- 
+55555
+ 4__4
+  3_3
+   22
+    1 -->
+<script>
+    for(let i=5; i>=1; i--){
+        for(let s=0; s<5-i; s++){
+            document.write("&nbsp;&nbsp;");
+        }
+        if(i===5){
+            for(let k=1; k<=5; k++){
+                document.write("5");
+            }
+        }else if(i===2){
+            document.write(i+""+i);
+        }else if(i===1){
+            document.write(i);
+        }else{
+            document.write(i);
+            for(let j=1; j<=i-2; j++){
+                document.write("_");
+            }
+            document.write(i);
+        }
+        document.write("<br>");
+
+
+    }
+</script>

@@ -1,0 +1,15 @@
+<!-- 30) Sum of series: 1 + 11 + 111 + 1111 + 11111... up to N terms -->
+
+  <script>
+    let n = 5; 
+    let sum = 0;
+    let num = 1;
+
+    for (let i = 1; i <= n; i++) {
+      sum += num;
+      document.write(num + " ");
+      num = num * 10 + 1; // Form next number in series
+    }
+
+    document.write("<br><b>Sum of series: " + sum + "</b>");
+  </script>

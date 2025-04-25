@@ -1,0 +1,20 @@
+<!-- 61) Find all leap years between two entered years -->
+
+  <script>
+    let startYear = 2000;  
+    let endYear = 2025;    
+
+    function isLeapYear(year) {
+      if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+        return true;
+      }
+      return false;
+    }
+
+    document.write("Leap years between " + startYear + " and " + endYear + " are: <br>");
+    for (let year = startYear; year <= endYear; year++) {
+      if (isLeapYear(year)) {
+        document.write(year + "<br>");
+      }
+    }
+  </script>

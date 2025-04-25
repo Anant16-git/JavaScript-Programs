@@ -1,0 +1,16 @@
+<!-- 
+ABCDE
+A  D
+A C
+AB
+A -->
+<script>
+    let letters="ABCDE";
+    document.write(letters+"<br>");
+    for(let i=1; i<letters.length-1; i++){
+        document.write(letters.charAt(0));
+        document.write(" ");
+        document.write(letters.charAt(letters.length-1-i));
+        document.write("<br>");
+    }
+</script>

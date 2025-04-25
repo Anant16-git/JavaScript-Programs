@@ -1,0 +1,18 @@
+<!-- 56) Print the factorial of all the numbers between two entered numbers -->
+
+  <script>
+    let startNum = 1;  
+    let endNum = 10;   
+
+    function factorial(num) {
+      let fact = 1;
+      for (let i = 1; i <= num; i++) {
+        fact *= i;
+      }
+      return fact;
+    }
+
+    for (let i = startNum; i <= endNum; i++) {
+      document.write("Factorial of " + i + " is: " + factorial(i) + "<br>");
+    }
+  </script>

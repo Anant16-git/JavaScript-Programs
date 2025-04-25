@@ -1,0 +1,16 @@
+<!-- 48) Find factors of all numbers between two entered numbers -->
+
+  <script>
+    let startNum = 1; 
+    let endNum = 10;  
+
+    for (let i = startNum; i <= endNum; i++) {
+      document.write("<h3>Factors of " + i + ":</h3>");
+      for (let j = 1; j <= i; j++) {
+        if (i % j === 0) {
+          document.write(j + " ");
+        }
+      }
+      document.write("<br><br>");
+    }
+  </script>

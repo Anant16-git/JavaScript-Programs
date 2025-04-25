@@ -1,0 +1,19 @@
+<!-- 42) Find the HCF (Highest Common Factor) of two numbers -->
+
+  <script>
+    let num1 = 12; 
+    let num2 = 15; 
+
+    function gcd(a, b) {
+      while (b !== 0) {
+        let temp = b;
+        b = a % b;
+        a = temp;
+      }
+      return a;
+    }
+
+    let hcf = gcd(num1, num2);
+
+    document.write("HCF of " + num1 + " and " + num2 + " is: " + hcf);
+  </script>

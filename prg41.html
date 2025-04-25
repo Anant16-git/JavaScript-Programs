@@ -1,0 +1,19 @@
+<!-- 41) Find the LCM (Least Common Multiple) of a number -->
+
+  <script>
+    let num1 = 12; 
+    let num2 = 15; 
+
+    function gcd(a, b) {
+      while (b !== 0) {
+        let temp = b;
+        b = a % b;
+        a = temp;
+      }
+      return a;
+    }
+
+    let lcm = (num1 * num2) / gcd(num1, num2);
+
+    document.write("LCM of " + num1 + " and " + num2 + " is: " + lcm);
+  </script>

@@ -1,0 +1,23 @@
+<!-- 50) Find all palindrome numbers between two entered numbers -->
+
+  <script>
+    let startNum = 1; 
+    let endNum = 1000; 
+
+    function isPalindrome(num) {
+      let originalNum = num;
+      let reversedNum = 0;
+      while (num !== 0) {
+        let digit = num % 10;
+        reversedNum = reversedNum * 10 + digit;
+        num = Math.floor(num / 10);
+      }
+      return originalNum === reversedNum;
+    }
+
+    for (let i = startNum; i <= endNum; i++) {
+      if (isPalindrome(i)) {
+        document.write(i + " is a palindrome number.<br>");
+      }
+    }
+  </script>

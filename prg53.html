@@ -1,0 +1,36 @@
+<!-- 53) Print all strong numbers between two entered numbers -->
+
+  <script>
+    let startNum = 1;   
+    let endNum = 1000;  
+
+    function factorial(n) {
+      if (n === 0 || n === 1) {
+        return 1;
+      }
+      let fact = 1;
+      for (let i = 1; i <= n; i++) {
+        fact *= i;
+      }
+      return fact;
+    }
+
+    function isStrong(num) {
+      let sum = 0;
+      let tempNum = num;
+      
+      while (tempNum > 0) {
+        let digit = tempNum % 10;
+        sum += factorial(digit);
+        tempNum = Math.floor(tempNum / 10);
+      }
+      
+      return sum === num;
+    }
+
+    for (let i = startNum; i <= endNum; i++) {
+      if (isStrong(i)) {
+        document.write(i + " is a strong number.<br>");
+      }
+    }
+  </script>

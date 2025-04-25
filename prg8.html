@@ -1,0 +1,14 @@
+<!-- 8) WAP to print Fibonacci series -->
+<script>
+    let n = prompt("Enter the number of terms for Fibonacci series:");
+    let a = 0, b = 1, next;
+
+    document.write("Fibonacci Series: <br>");
+
+    for (let i = 1; i <= n; i++) {
+        document.write(a + " ");
+        next = a + b;
+        a = b;
+        b = next;
+    }
+</script>

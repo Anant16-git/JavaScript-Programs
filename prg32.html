@@ -1,0 +1,14 @@
+<!-- 32) Series: A, b, C, d, E, f, G, h... up to N terms -->
+
+  <script>
+    let n = 10; 
+    let charCode = 65; 
+
+    for (let i = 1; i <= n; i++) {
+      let char = String.fromCharCode(charCode);
+      document.write(char + " ");
+      
+      // Alternate between uppercase and lowercase
+      charCode = (charCode % 2 === 0) ? charCode + 33 : charCode + 1;
+    }
+  </script>

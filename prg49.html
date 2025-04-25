@@ -1,0 +1,22 @@
+<!-- 49) Find all the perfect numbers between two entered numbers -->
+
+  <script>
+    let startNum = 1; 
+    let endNum = 10000; 
+
+    function isPerfect(num) {
+      let sum = 0;
+      for (let i = 1; i <= num / 2; i++) {
+        if (num % i === 0) {
+          sum += i;
+        }
+      }
+      return sum === num;
+    }
+
+    for (let i = startNum; i <= endNum; i++) {
+      if (isPerfect(i)) {
+        document.write(i + " is a perfect number.<br>");
+      }
+    }
+  </script>

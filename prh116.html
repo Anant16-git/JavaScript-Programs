@@ -1,0 +1,24 @@
+<!-- 
+ABCDE
+ ABCD
+  ABC
+   AB
+    A -->
+    <script>
+        let alphabet = "ABCDE";
+    
+        for (let i = 5; i >= 1; i--) {
+          // Print leading spaces
+          for (let s = 0; s < 5 - i; s++) {
+            document.write("&nbsp;&nbsp;");
+          }
+    
+          // Print first i letters from alphabet
+          for (let j = 0; j < i; j++) {
+            document.write(alphabet[j]);
+          }
+    
+          // New line
+          document.write("<br>");
+        }
+      </script>

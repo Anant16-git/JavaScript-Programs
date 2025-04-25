@@ -1,0 +1,12 @@
+<!-- 46) Sum of the first and last digit of a user-entered number -->
+
+  <script>
+    let num = prompt("Enter a number:"); 
+    num = parseInt(num);
+    let firstDigit = parseInt(num.toString().charAt(0));
+    let lastDigit = num % 10;
+
+    let sum = firstDigit + lastDigit;
+
+    document.write("Sum of the first and last digit of " + num + " is: " + sum);
+  </script>

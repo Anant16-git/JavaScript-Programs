@@ -1,0 +1,16 @@
+<!-- 58) Convert a decimal number into a binary number without using an array -->
+
+  <script>
+    let decimalNum = 13; 
+
+    function decimalToBinary(num) {
+      let binaryNum = '';
+      while (num > 0) {
+        binaryNum = (num % 2) + binaryNum;
+        num = Math.floor(num / 2);
+      }
+      return binaryNum;
+    }
+
+    document.write("Binary of " + decimalNum + " is: " + decimalToBinary(decimalNum));
+  </script>

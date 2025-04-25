@@ -1,0 +1,27 @@
+<!-- 39) Check if a number is strong or not -->
+
+  <script>
+    function factorial(num) {
+      let fact = 1;
+      for (let i = 1; i <= num; i++) {
+        fact *= i;
+      }
+      return fact;
+    }
+
+    let num = 145; 
+    let originalNum = num;
+    let sum = 0;
+
+    while (num !== 0) {
+      let digit = num % 10;
+      sum += factorial(digit);
+      num = Math.floor(num / 10);
+    }
+
+    if (originalNum === sum) {
+      document.write(originalNum + " is a strong number.");
+    } else {
+      document.write(originalNum + " is not a strong number.");
+    }
+  </script>

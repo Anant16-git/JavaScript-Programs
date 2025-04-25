@@ -1,0 +1,13 @@
+<!-- 44) Interchange First and Last Digit of a Number -->
+
+  <script>
+    let num = 12345; 
+    let numStr = num.toString();
+    let firstDigit = numStr.charAt(0);
+    let lastDigit = numStr.charAt(numStr.length - 1);
+
+    let swappedNum = lastDigit + numStr.slice(1, numStr.length - 1) + firstDigit;
+
+    document.write("Original Number: " + num + "<br>");
+    document.write("Number after interchanging first and last digits: " + swappedNum);
+  </script>
